@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;600;700;900&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+blockquote,
+dl,
+dd,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+hr,
+figure,
+p,
+pre {
+  margin: 0;
+  font-family: Mulish;
+  color: #565656;
+}
+
+body{
+    background-color:#D8EBEB;
+}
+
+input{
+  @apply rounded border-light-blue border-[1px] w-full text-lg p-1 text-text-alternative;
+}
+
+label{
+  @apply text-lg text-primary font-medium opacity-70 ;
+}
+
+.input-dollar:before{
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  content: "$";
+  left: 8px;
+  color: #565656;
+}
+
+.bg-blue-gradient{
+  background: linear-gradient(303.43deg, #4A4D9D -12.43%, #24C6DC 103.92%);
+}
